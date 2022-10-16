@@ -1,6 +1,6 @@
 [package]
 name = "pagetop-website"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2021"
 
 authors = [
@@ -10,7 +10,7 @@ description = """\
     PageTop website.\
 """
 homepage = "https://pagetop.cillero.es"
-repository = "https://github.com/manuelcillero/pagetop"
+repository = "https://github.com/manuelcillero/pagetop-website"
 license = "Apache-2.0 OR MIT"
 
 [dependencies]
