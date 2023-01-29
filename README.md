@@ -8,9 +8,8 @@ desarrollo y buenas prácticas para crear soluciones web SSR (*Server-Side Rende
 
 # 🚧 Advertencia
 
-**PageTop** sólo libera actualmente versiones de desarrollo. En este contexto la API no tiene
-ninguna estabilidad y los cambios son constantes. No puede considerarse listo para producción hasta
-que se libere la versión **0.1.0**.
+**PageTop** sólo libera actualmente versiones de desarrollo. La API no es estable y los cambios son
+constantes. No puede considerarse preparado hasta que se libere la versión **0.1.0**.
 
 
 # 📜 Licencia
