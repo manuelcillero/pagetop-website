@@ -1,4 +1,5 @@
 use pagetop::prelude::*;
+use pagetop_bootsier::Bootsier;
 use pagetop_mdbook::MdBook;
 
 pub_handle!(APP_PAGETOP_WEBSITE);
@@ -17,7 +18,7 @@ impl ModuleTrait for PageTopWebSite {
     }
 
     fn dependencies(&self) -> Vec<ModuleStaticRef> {
-        vec![&MdBook, &pagetop::base::module::homepage::DefaultHomePage]
+        vec![&Bootsier, &MdBook]
     }
 
     fn configure_service(&self, cfg: &mut server::web::ServiceConfig) {

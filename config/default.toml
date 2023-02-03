@@ -3,6 +3,7 @@ name = "PageTop WebSite"
 description = """\
     The definitive PageTop Guide for PageTop Users.\
 """
+theme = "Bootsier"
 language = "es-ES"
 
 [log]
