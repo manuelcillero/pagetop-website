@@ -1,6 +1,6 @@
 [package]
 name = "pagetop-website"
-version = "0.0.4"
+version = "0.0.5"
 edition = "2021"
 
 authors = [
@@ -14,13 +14,14 @@ repository = "https://github.com/manuelcillero/pagetop-website"
 license = "Apache-2.0 OR MIT"
 
 [dependencies]
-actix-web = "4.2.1"
+actix-web = "4"
 static-files = "0.2.3"
-pagetop = { path = "../PageTop/pagetop", version = "0.0" }
-pagetop-bootsier = { path = "../PageTop/pagetop-bootsier", version = "0.0" }
-pagetop-mdbook = { path = "../pagetop-mdbook", version = "0.0" }
-maud = "0.24.0"
+pagetop = { version = "0.0", path = "../PageTop/pagetop" }
+pagetop-bootsier = { version = "0.0", path = "../PageTop/pagetop-bootsier" }
+pagetop-homedemo = { version = "0.0", path = "../PageTop/pagetop-homedemo" }
+pagetop-mdbook = { version = "0.0", path = "../pagetop-mdbook" }
+maud = "0.25.0"
 
 [build-dependencies]
-pagetop-build = { path = "../PageTop/pagetop-build", version = "0.0" }
-pagetop-mdbook = { path = "../pagetop-mdbook", version = "0.0" }
+pagetop-build = { version = "0.0", path = "../PageTop/pagetop-build" }
+pagetop-mdbook = { version = "0.0", path = "../pagetop-mdbook" }
