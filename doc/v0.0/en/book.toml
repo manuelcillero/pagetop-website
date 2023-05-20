@@ -5,4 +5,4 @@ src = "src"
 title = "PageTop Guides"
 
 [build]
-build-dir = "../../static/doc/en"
+build-dir = "../../../static/doc/v0.0/en"

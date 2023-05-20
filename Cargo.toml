@@ -20,7 +20,6 @@ pagetop = { version = "0.0", path = "../PageTop/pagetop" }
 pagetop-bootsier = { version = "0.0", path = "../PageTop/pagetop-bootsier" }
 pagetop-homedemo = { version = "0.0", path = "../PageTop/pagetop-homedemo" }
 pagetop-mdbook = { version = "0.0", path = "../pagetop-mdbook" }
-maud = "0.25.0"
 
 [build-dependencies]
 pagetop-build = { version = "0.0", path = "../PageTop/pagetop-build" }

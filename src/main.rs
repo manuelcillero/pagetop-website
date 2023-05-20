@@ -1,15 +1,9 @@
 use pagetop::prelude::*;
-use pagetop_bootsier::Bootsier;
-use pagetop_homedemo::HomeDemo;
-use pagetop_mdbook::MdBook;
 
 define_handle!(APP_PAGETOP_WEBSITE);
 
-include!(concat!(env!("OUT_DIR"), "/guides_en.rs"));
-static GUIDES_EN: LazyStatic<HashMapResources> = LazyStatic::new(bundle_guides_en);
-
-include!(concat!(env!("OUT_DIR"), "/guias_es.rs"));
-static GUIAS_ES: LazyStatic<HashMapResources> = LazyStatic::new(bundle_guias_es);
+include!(concat!(env!("OUT_DIR"), "/doc.rs"));
+static DOC: LazyStatic<HashMapResources> = LazyStatic::new(bundle_doc);
 
 struct PageTopWebSite;
 
@@ -19,13 +13,17 @@ impl ModuleTrait for PageTopWebSite {
     }
 
     fn dependencies(&self) -> Vec<ModuleStaticRef> {
-        vec![&Bootsier, &HomeDemo, &MdBook]
+        vec![
+            // Modules.
+            &pagetop_homedemo::HomeDemo,
+            &pagetop_mdbook::MdBook,
+            // Theme.
+            &pagetop_bootsier::Bootsier,
+        ]
     }
 
     fn configure_service(&self, cfg: &mut server::web::ServiceConfig) {
-        MdBook::configure_service_for_common_resources(cfg);
-        MdBook::configure_service_for_mdbook(cfg, "/doc/en", &GUIDES_EN);
-        MdBook::configure_service_for_mdbook(cfg, "/doc/es", &GUIAS_ES);
+        pagetop_mdbook::MdBook::configure_service_for_mdbook(cfg, "/doc", &DOC);
     }
 }
 
