@@ -22,7 +22,7 @@ impl ModuleTrait for PageTopWebSite {
         ]
     }
 
-    fn configure_service(&self, cfg: &mut server::web::ServiceConfig) {
+    fn configure_service(&self, cfg: &mut service::web::ServiceConfig) {
         pagetop_mdbook::MdBook::configure_service_for_mdbook(cfg, "/doc", &DOC);
     }
 }
