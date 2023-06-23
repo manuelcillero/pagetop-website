@@ -1,6 +1,8 @@
-use pagetop_build::bundle_resources;
 use pagetop_mdbook::util::except_mdbook_common_resources;
 
 fn main() -> std::io::Result<()> {
-    bundle_resources("./static/doc", "doc", Some(except_mdbook_common_resources))
+    pagetop_build::StaticFilesBundle::from_dir("./static/doc")
+        .with_name("doc")
+        .with_filter(except_mdbook_common_resources)
+        .build()
 }

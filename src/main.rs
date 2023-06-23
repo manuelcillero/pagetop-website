@@ -1,9 +1,8 @@
 use pagetop::prelude::*;
 
-define_handle!(APP_PAGETOP_WEBSITE);
+use_handle!(APP_PAGETOP_WEBSITE);
 
-include!(concat!(env!("OUT_DIR"), "/doc.rs"));
-static DOC: LazyStatic<HashMapResources> = LazyStatic::new(bundle_doc);
+use_static!(doc => BUNDLE_DOC);
 
 struct PageTopWebSite;
 
@@ -23,7 +22,7 @@ impl ModuleTrait for PageTopWebSite {
     }
 
     fn configure_service(&self, cfg: &mut service::web::ServiceConfig) {
-        pagetop_mdbook::MdBook::configure_service_for_mdbook(cfg, "/doc", &DOC);
+        pagetop_mdbook::MdBook::configure_service_for_mdbook(cfg, "/doc", &BUNDLE_DOC);
     }
 }
 
