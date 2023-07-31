@@ -1,25 +1,27 @@
 [package]
 name = "pagetop-website"
-version = "0.0.6"
+version = "0.0.7"
 edition = "2021"
 
 authors = [
     "Manuel Cillero <manuel@cillero.es>"
 ]
 description = """\
-    PageTop website.\
+    PageTop Landing Page.\
 """
 homepage = "https://pagetop.cillero.es"
 repository = "https://github.com/manuelcillero/pagetop-website"
 license = "Apache-2.0 OR MIT"
 
 [dependencies]
-actix-web = "4"
 static-files = "0.2.3"
 pagetop = { version = "0.0", path = "../PageTop/pagetop" }
-pagetop-bootsier = { version = "0.0", path = "../PageTop/pagetop-bootsier" }
-pagetop-homedemo = { version = "0.0", path = "../PageTop/pagetop-homedemo" }
+pagetop-megamenu = { version = "0.0", path = "../PageTop/pagetop-megamenu" }
+pagetop-minimal = { version = "0.0", path = "../PageTop/pagetop-minimal" }
 pagetop-mdbook = { version = "0.0", path = "../pagetop-mdbook" }
+pagetop-bootsier = { version = "0.0", path = "../PageTop/pagetop-bootsier" }
+
+serde = { version = "1.0", features = ["derive"] }
 
 [build-dependencies]
 pagetop-build = { version = "0.0", path = "../PageTop/pagetop-build" }

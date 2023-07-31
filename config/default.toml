@@ -1,10 +1,7 @@
 [app]
-name = "PageTop WebSite"
-description = """\
-    The definitive PageTop Guide for PageTop Users.\
-"""
-theme = "Bootsier"
-language = "es-ES"
+name = "PageTop"
+description = "An opinionated Rust web framework to build secure and modular web solutions."
+#theme = "Bootsier"
 
 [log]
 rolling = "Daily"
