@@ -1,5 +1,7 @@
 **/target
 **/log/*.log*
+**/local.*.toml
+**/local.toml
 static/doc
 Cargo.lock
 workdir

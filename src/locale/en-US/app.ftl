@@ -1,5 +1,6 @@
 app_name = PageTop Landing Page
 app_description = Discover PageTop with helpful user guides, tutorials, and practical examples.
+app_slogan = Modular web solutions made simple
 
 menu_home = Home
 menu_documentation = Documentation

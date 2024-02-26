@@ -1,5 +1,6 @@
 app_name = Presentación de PageTop
 app_description = Descubre PageTop con guías útiles para el usuario, tutoriales y ejemplos prácticos.
+app_slogan = Crea fácilmente soluciones web modulares
 
 menu_home = Inicio
 menu_documentation = Documentación

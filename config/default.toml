@@ -1,7 +1,9 @@
 [app]
 name = "PageTop"
 description = "An opinionated Rust web framework to build secure and modular web solutions."
-#theme = "Bootsier"
+#theme = "Basic"
+#theme = "Chassis"
+theme = "Inception"
 
 [log]
 rolling = "Daily"
