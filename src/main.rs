@@ -1,10 +1,7 @@
 use pagetop::prelude::*;
 
-mod home;
-
 static_locales!(LOCALES_WEBSITE);
 
-static_files!(app);
 static_files!(doc => BUNDLE_DOC);
 
 struct PageTopWebSite;
@@ -71,29 +68,25 @@ selectLang.addEventListener('change',function(){window.location.href='/'+selectL
                 "###
                 }
             })));
-        add_component_in(
-            Region::Named("header"),
-            ArcAnyComponent::new(
+
+        InRegion::Named("header")
+            .add_component(ArcAnyComponent::new(
                 flex::Container::new()
                     .with_direction(flex::Direction::Row(BreakPoint::None))
                     .with_content_justify(flex::ContentJustify::SpaceBetween)
                     .with_items_align(flex::ItemAlign::Bottom)
                     .add_item(flex::Item::new().add_component(branding))
                     .add_item(flex::Item::new().add_component(menu)),
-            ),
-        );
-        add_component_in(
-            Region::Named("footer"),
-            ArcAnyComponent::new(PoweredBy::new()),
-        );
+            ))
+            .add_component(ArcAnyComponent::new(Wrapper::new().add_component(
+                Paragraph::translated(L10n::t("under_construction", &LOCALES_WEBSITE))
+            )));
+        InRegion::Named("footer").add_component(ArcAnyComponent::new(PoweredBy::new()));
     }
 
     fn configure_service(&self, scfg: &mut service::web::ServiceConfig) {
-        scfg.route("/doc/latest/{lang}", service::web::get().to(doc_latest))
-            .route("/", service::web::get().to(home_default))
-            .route("/{lang}", service::web::get().to(home_page));
+        scfg.route("/doc/latest/{lang}", service::web::get().to(doc_latest));
         pagetop_mdbook::MdBook::service_for_mdbook(scfg, "/doc", &BUNDLE_DOC);
-        service_for_static_files!(scfg, app => "/app");
     }
 }
 
@@ -101,20 +94,6 @@ async fn doc_latest(path: service::web::Path<String>) -> service::HttpResponse {
     match path.into_inner().as_str() {
         "es" => Redirect::see_other("/doc/v0.0/es/index.html"),
         _ => Redirect::see_other("/doc/v0.0/en/index.html"),
-    }
-}
-
-async fn home_default(request: service::HttpRequest) -> ResultPage<Markup, ErrorPage> {
-    home::page(request, langid_for("en").unwrap_or(&LANGID_FALLBACK))
-}
-
-async fn home_page(
-    request: service::HttpRequest,
-    path: service::web::Path<String>,
-) -> ResultPage<Markup, ErrorPage> {
-    match langid_for(path.into_inner()) {
-        Ok(lang) => home::page(request, lang),
-        _ => Err(ErrorPage::NotFound(request)),
     }
 }
 

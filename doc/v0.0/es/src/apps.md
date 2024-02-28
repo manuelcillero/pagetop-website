@@ -19,7 +19,7 @@ Ahora sólo tienes que copiar el código anterior en tu archivo `main.rs` y desd
 cargo run
 ```
 
-Si todo ha ido bien, después de compilar el código ejecutará la aplicación y el terminal quedará en espera mostrando el *título* y *lema* predefinidos.
+Si todo ha ido bien, después de compilar el código se ejecutará la aplicación. El terminal quedará en espera mostrando el *nombre de la aplicación* y *lema* predefinidos.
 
 Ahora abre un navegador en el mismo equipo y escribe `http://localhost:8088` en la barra de direcciones. Y ya está, ¡la página de presentación de PageTop te dará la bienvenida!
 
@@ -46,4 +46,4 @@ Como hemos visto, primero debemos instanciar la [Aplicación](https://docs.rs/pa
 
 Por sí misma no hace nada más, por eso se usa el método [`run()`](https://docs.rs/pagetop/latest/pagetop/app/struct.Application.html#method.run), para ejecutar el servidor web y poner en marcha nuestra aplicación.
 
-Hablaremos más de todos estos subsistemas en las siguientes páginas. Mientras tanto, ¡vamos a añadir algo de lógia a nuestra aplicación creando un paquete con un nuevo servicio web!
+Hablaremos más de todos estos subsistemas en las siguientes páginas. Mientras tanto, ¡vamos a añadir algo de lógica a nuestra aplicación creando un paquete con un nuevo servicio web!

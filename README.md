@@ -1,26 +1,28 @@
-Aplicación creada con **PageTop** para presentar el entorno a la comunidad y publicar la
-documentación de usuario ([pagetop.cillero.es](https://pagetop.cillero.es)).
-
-[PageTop](https://github.com/manuelcillero/pagetop), es un entorno de desarrollo basado en algunos
-de los *crates* más estables y populares del ecosistema Rust para proporcionar APIs, patrones de
-desarrollo y buenas prácticas para crear soluciones web SSR (*Server-Side Rendering*).
+Application created with **PageTop** to introduce the environment to the community and publish user
+documentation ([pagetop.cillero.es](https://pagetop.cillero.es)).
 
 
-# 🚧 Advertencia
+# 📦 About PageTop
 
-**PageTop** sólo libera actualmente versiones de desarrollo. La API no es estable y los cambios son
-constantes. No puede considerarse preparado hasta que se libere la versión **0.1.0**.
+[PageTop](https://docs.rs/pagetop) is an opinionated [Rust](https://www.rust-lang.org) web
+development framework to build secure and modular Server-Side Rendering (SSR) web solutions.
 
 
-# 📜 Licencia
+# 🚧 Warning
 
-Este proyecto tiene licencia, de hecho tiene dos, puedes aplicar cualquiera de las siguientes a tu
-elección:
+**PageTop** framework is currently in active development. The API is unstable and subject to
+frequent changes. Production use is not recommended until version **0.1.0**.
 
-* Licencia Apache versión 2.0
-  ([LICENSE-APACHE](https://github.com/manuelcillero/pagetop/blob/main/LICENSE-APACHE) o
-  [http://www.apache.org/licenses/LICENSE-2.0]).
 
-* Licencia MIT
-  ([LICENSE-MIT](https://github.com/manuelcillero/pagetop/blob/main/LICENSE-MIT) o
-  [http://opensource.org/licenses/MIT]).
+# 📜 License
+
+All code in this project is dual-licensed under either:
+
+  * MIT License
+    ([LICENSE-MIT](LICENSE-MIT) or https://opensource.org/licenses/MIT)
+
+  * Apache License, Version 2.0,
+    ([LICENSE-APACHE](LICENSE-APACHE) or https://www.apache.org/licenses/LICENSE-2.0)
+
+at your option. This means you can select the license you prefer! This dual-licensing approach is
+the de-facto standard in the Rust ecosystem.
