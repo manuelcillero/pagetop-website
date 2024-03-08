@@ -70,18 +70,18 @@ selectLang.addEventListener('change',function(){window.location.href='/'+selectL
             })));
 
         InRegion::Named("header")
-            .add_component(ArcAnyComponent::new(
+            .add(AnyComponent::with(
                 flex::Container::new()
                     .with_direction(flex::Direction::Row(BreakPoint::None))
                     .with_content_justify(flex::ContentJustify::SpaceBetween)
                     .with_items_align(flex::ItemAlign::Bottom)
-                    .add_item(flex::Item::new().add_component(branding))
-                    .add_item(flex::Item::new().add_component(menu)),
+                    .add_item(flex::Item::with(branding))
+                    .add_item(flex::Item::with(menu)),
             ))
-            .add_component(ArcAnyComponent::new(Wrapper::new().add_component(
-                Paragraph::translated(L10n::t("under_construction", &LOCALES_WEBSITE))
+            .add(AnyComponent::with(Wrapper::new().add_component(
+                Paragraph::fluent(L10n::t("under_construction", &LOCALES_WEBSITE)),
             )));
-        InRegion::Named("footer").add_component(ArcAnyComponent::new(PoweredBy::new()));
+        InRegion::Named("footer").add(AnyComponent::with(PoweredBy::new()));
     }
 
     fn configure_service(&self, scfg: &mut service::web::ServiceConfig) {
