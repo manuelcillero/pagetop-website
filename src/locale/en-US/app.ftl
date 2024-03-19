@@ -7,4 +7,4 @@ menu_documentation = Documentation
 menu_api = API
 menu_code = Code
 
-under_construction = <strong>This website is under construction</strong>. If you're curious, you can read the <a href="/doc/latest/es">latest version of this guide in Spanish</a>.
+under_construction = <strong>This website is under construction</strong>. If you're curious, you can read the <a href="/doc/latest/es">latest Spanish version of the PageTop documentation</a>.
