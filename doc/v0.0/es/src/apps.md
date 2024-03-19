@@ -28,11 +28,11 @@ Sin embargo, aún no hemos indicado a nuestra aplicación qué hacer. Si quieres
 
 # ¿Qué hace una aplicación?
 
-Como hemos visto, primero debemos instanciar la [Aplicación](https://docs.rs/pagetop/latest/pagetop/app/struct.Application.html). Podemos hacerlo con dos métodos, [`new()`](https://docs.rs/pagetop/latest/pagetop/app/struct.Application.html#method.new), que hemos usado en el ejemplo anterior, o [`prepare()`](https://docs.rs/pagetop/latest/pagetop/app/struct.Application.html#method.prepare), que veremos en la siguiente página. Uno u otro método se encargan de iniciar los diferentes subsistemas de PageTop por este orden:
+Como hemos visto, primero debemos instanciar la [Aplicación](https://docs.rs/pagetop/latest/pagetop/app/struct.Application.html). Podemos hacerlo con dos métodos, [`new()`](https://docs.rs/pagetop/latest/pagetop/app/struct.Application.html#method.new), que hemos usado en el ejemplo anterior, o [`prepare()`](https://docs.rs/pagetop/latest/pagetop/app/struct.Application.html#method.prepare), que veremos en la siguiente página. Ambos se encargan de iniciar los diferentes subsistemas de PageTop por este orden:
 
 1. Inicializa la traza de mensajes de registro y eventos.
 
-2. Valida el identicador global de idioma.
+2. Valida el identificador global de idioma.
 
 3. Conecta con la base de datos.
 
@@ -44,6 +44,6 @@ Como hemos visto, primero debemos instanciar la [Aplicación](https://docs.rs/pa
 
 7. Ejecuta las actualizaciones pendientes de la base de datos.
 
-Por sí misma no hace nada más, por eso se usa el método [`run()`](https://docs.rs/pagetop/latest/pagetop/app/struct.Application.html#method.run), para ejecutar el servidor web y poner en marcha nuestra aplicación.
+Pero no ejecuta la aplicación. Para eso se usa el método [`run()`](https://docs.rs/pagetop/latest/pagetop/app/struct.Application.html#method.run), que arranca el servidor web para empezar a responder peticiones desde cualquier navegador.
 
 Hablaremos más de todos estos subsistemas en las siguientes páginas. Mientras tanto, ¡vamos a añadir algo de lógica a nuestra aplicación creando un paquete con un nuevo servicio web!

@@ -5,7 +5,7 @@ Si quieres aprender a crear soluciones web que rescaten la esencia de los oríge
 
 # ¿Qué es PageTop?
 
-**PageTop** es un marco de desarrollo web que proporciona herramientas y patrones de diseño predefinidos para el desarrollo de soluciones web seguras, modulares y personalizables con *Renderizado desde el Servidor* (SSR).
+**PageTop** es un marco de desarrollo web que proporciona herramientas y patrones de diseño predefinidos para el desarrollo de soluciones web seguras, modulares y personalizables con *Renderizado desde el Servidor* ([SSR](#ssr)).
 
 PageTop está desarrollado en el [lenguaje de programación Rust](https://www.rust-lang.org/) y se apoya sobre los hombros de auténticos gigantes, usando algunas de las librerías (*crates*) más estables y reconocidas del [ecosistema Rust](https://lib.rs) como:
 
@@ -22,6 +22,18 @@ La [API de PageTop](https://docs.rs/pagetop) permite adaptar y extender sus func
 - Los **Componentes** permiten encapsular HTML, CSS y JavaScript en unidades funcionales, configurables y bien definidas.
 - Los **Paquetes** amplían o personalizan funcionalidades interactuando con las APIs de PageTop o las APIs de paquetes de terceros.
 - Y los **Temas** son *paquetes* que van a permitir a los desarrolladores cambiar la apariencia de páginas y componentes sin afectar su funcionalidad.
+
+
+# SSR
+
+El *Renderizado desde el Servidor* (SSR) es una técnica de desarrollo web en la que el contenido HTML se genera en el servidor antes de enviarlo al navegador del usuario, donde CSS y JavaScript añaden la interactividad necesaria. PageTop encapsula todos estos elementos en **componentes** unitarios que pueden mantenerse de forma independiente y ser extendidos o modificados por otras librerías.
+
+Esto contrasta con la *Renderización desde el Cliente* (CSR), donde es el navegador el que genera el contenido HTML tras recibir el código WebAssembly o JavaScript necesario desde el servidor.
+
+PageTop usa SSR como una solución robusta para la creación de soluciones web complejas. Pero también presenta desafíos, como ciclos de desarrollo más lentos por la necesidad de recompilar cada cambio en el código Rust. No obstante, ofrece excelentes tiempos de carga iniciales, mejora en el SEO, y unifica el desarrollo en cliente y servidor bajo un mismo lenguaje.
+
+
+# Contribuciones
 
 PageTop [empezó como un proyecto personal](https://manuel.cillero.es/blog/aprendiendo-rust-presentando-pagetop/) para aprender a programar con Rust. Es [libre y de código abierto](https://github.com/manuelcillero/pagetop), para siempre. Y puedes contribuir aumentando su versatilidad, documentando, traduciendo o corrigiendo errores. Pero también puedes crear tus propios paquetes o temas que otros desarrolladores podrán utilizar en sus proyectos.
 
