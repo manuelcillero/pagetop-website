@@ -3,15 +3,14 @@ name = "pagetop-website"
 version = "0.0.10"
 edition = "2021"
 
-authors = [
-    "Manuel Cillero <manuel@cillero.es>"
-]
-description = """\
-    PageTop Landing Page.\
-"""
+description = "Introduce the PageTop environment to the community."
 homepage = "https://pagetop.cillero.es"
 repository = "https://github.com/manuelcillero/pagetop-website"
 license = "MIT OR Apache-2.0"
+
+authors = [
+    "Manuel Cillero <manuel@cillero.es>"
+]
 
 [dependencies]
 static-files = "0.2.3"

@@ -1,6 +1,6 @@
 [app]
 name = "PageTop"
-description = "An opinionated Rust web framework to build secure and modular web solutions."
+description = "An opinionated web framework to build modular Server-Side Rendering web solutions."
 #theme = "Basic"
 #theme = "Chassis"
 theme = "Inception"

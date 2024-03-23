@@ -1,11 +1,19 @@
-Application created with **PageTop** to introduce the environment to the community and publish user
-documentation ([pagetop.cillero.es](https://pagetop.cillero.es)).
+<div align="center">
+<h1>PageTop Website</h1>
+<p>Introduce the PageTop environment to the community.</p>
+</div>
+
+## Overview
+
+This application, itself created with **PageTop**, serves as a gateway for the community to explore
+the ecosystem, offering comprehensive user documentation and insights at
+[pagetop.cillero.es](https://pagetop.cillero.es).
 
 
 # 📦 About PageTop
 
-[PageTop](https://docs.rs/pagetop) is an opinionated [Rust](https://www.rust-lang.org) web
-development framework to build secure and modular Server-Side Rendering (SSR) web solutions.
+[PageTop](https://docs.rs/pagetop) is an opinionated web framework to build modular *Server-Side
+Rendering* web solutions.
 
 
 # 🚧 Warning
