@@ -8,11 +8,7 @@ PageTop depende en gran medida de las mejoras que se aplican en el lenguaje y el
 
 Puedes instalar Rust siguiendo la [Guía de Inicio Rápido de Rust](https://www.rust-lang.org/es/learn/get-started).
 
-Una vez completada la instalación, tendrás disponibles en tu sistema el compilador `rustc` y `cargo`, el sistema de construcción y gestión de paquetes (*crates*) de Rust.
-
-## Editor de código / IDE
-
-Puedes usar el editor de código preferido, pero se recomienda uno que permita instalar la extensión de [rust-analyzer](https://github.com/rust-lang/rust-analyzer). Aunque aún está en desarrollo, proporciona autocompletado y una inteligencia de código avanzada. [Visual Studio Code](https://code.visualstudio.com/) tiene una [extensión de rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) oficialmente soportada.
+Una vez completada la instalación, tendrás disponibles en tu sistema el compilador `rustc` y el comando `cargo` para la construcción y gestión de paquetes (*crates*) de Rust.
 
 ## Recursos para aprender Rust
 
@@ -22,10 +18,14 @@ El objetivo de esta guía es aprender a programar con PageTop rápidamente, por 
 * **[Rust con Ejemplos](https://doc.rust-lang.org/rust-by-example/)**: aprende Rust programando ejemplos de todo tipo.
 * **[Rustlings](https://github.com/rust-lang/rustlings)**: una serie de ejercicios divertidos e interactivos para conocer Rust.
 
+## Editor de código / IDE
 
-# Crea un nuevo proyecto PageTop
+Puedes usar tu editor de código preferido, pero se recomienda uno que permita instalar la extensión de [rust-analyzer](https://github.com/rust-lang/rust-analyzer). Aunque aún está en desarrollo, proporciona autocompletado y una inteligencia de código avanzada. [Visual Studio Code](https://code.visualstudio.com/) tiene una [extensión de rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) oficialmente soportada.
 
-¡Ha llegado el momento de empezar tu proyecto PageTop! PageTop es simplemente una dependencia más en tu proyecto. Puedes añadirlo a un proyecto existente o crear uno nuevo. Para ser completos, asumiremos que estás empezando desde cero.
+
+# Tu primer proyecto PageTop
+
+¡Ha llegado el momento de programar con PageTop! Para empezar, PageTop es simplemente una dependencia más en tu proyecto. Puedes añadirlo a un proyecto existente o crear uno nuevo. Para ser completos, asumiremos que estás empezando desde cero.
 
 ## Crea un nuevo proyecto de ejecutable Rust
 
@@ -36,7 +36,7 @@ cargo new my_pagetop_app
 cd my_pagetop_app
 ```
 
-Ahora ejecuta `cargo run` para compilar y ejecutar tu proyecto. Deberías ver impreso "Hello, world!" en tu terminal. Abre la carpeta "my_pagetop_app" en tu editor de código preferido y tómate un tiempo para revisar los archivos.
+Ahora ejecuta `cargo run` para compilar y ejecutar tu proyecto. Deberías ver el texto "Hello, world!" en tu terminal. Abre la carpeta "my_pagetop_app" en tu editor de código preferido y tómate un tiempo para revisar los archivos.
 
 `main.rs` es el punto de entrada de tu programa:
 
@@ -76,7 +76,7 @@ version = "0.1.0"
 edition = "2021" # debe ser 2021, o necesitarás configurar "resolver=2"
 
 [dependencies]
-pagetop = "0.0.49" # verifica que esta es la última versión
+pagetop = "0.0.52" # verifica que esta es la última versión
 ```
 
 Asegúrate de que añades la úiltima versión disponible de PageTop:
@@ -85,6 +85,6 @@ Asegúrate de que añades la úiltima versión disponible de PageTop:
 
 ## Construye PageTop
 
-Ahora ejecuta `cargo run` nuevamente. Las dependencias de PageTop deberían comenzar a compilarse. Esto tomará algo de tiempo ya que es la primera compilación de tu proyecto con PageTop. Esto sólo ocurrirá la primera vez. ¡Cada compilación después de esta será más rápida!
+Ahora ejecuta `cargo run` nuevamente. Las dependencias de PageTop deberían comenzar a compilarse. Tomará algo de tiempo ya que es la primera compilación de tu proyecto con PageTop. Esto sólo ocurrirá la primera vez. ¡Cada compilación después de esta será más rápida!
 
-Ahora que tenemos nuestro proyecto PageTop preparado, ¡estamos listos para empezar a programar nuestra primera aplicación PageTop!
+Ahora que tenemos nuestro proyecto PageTop preparado, ¡estamos listos para programar nuestra primera aplicación PageTop!

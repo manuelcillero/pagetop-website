@@ -70,12 +70,12 @@ selectLang.addEventListener('change',function(){window.location.href='/'+selectL
             })));
 
         InRegion::Named("header").add(AnyComponent::with(
-            Container::new()
-                .with_direction(FlexDirection::Row(BreakPoint::None))
-                .with_justify(FlexJustify::SpaceBetween)
-                .with_align(FlexAlign::End)
-                .add_item(Flex::with(branding))
-                .add_item(Flex::with(menu)),
+            flex::Container::new()
+                .with_direction(flex::Direction::Row(BreakPoint::None))
+                .with_justify(flex::Justify::SpaceBetween)
+                .with_align(flex::Align::End)
+                .add_item(flex::Item::with(branding))
+                .add_item(flex::Item::with(menu)),
         ));
         InRegion::Named("pagetop").add(AnyComponent::with(
             Block::new()

@@ -1,6 +1,6 @@
 [package]
 name = "pagetop-website"
-version = "0.0.10"
+version = "0.0.11"
 edition = "2021"
 
 description = "Introduce the PageTop environment to the community."

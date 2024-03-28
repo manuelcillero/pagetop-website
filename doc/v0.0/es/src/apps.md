@@ -44,6 +44,6 @@ Como hemos visto, primero debemos instanciar la [Aplicación](https://docs.rs/pa
 
 7. Ejecuta las actualizaciones pendientes de la base de datos.
 
-Pero no ejecuta la aplicación. Para eso se usa el método [`run()`](https://docs.rs/pagetop/latest/pagetop/app/struct.Application.html#method.run), que arranca el servidor web para empezar a responder peticiones desde cualquier navegador.
+Pero no ejecuta la aplicación. Para eso se usa el método [`run()`](https://docs.rs/pagetop/latest/pagetop/app/struct.Application.html#method.run), que arranca el servidor web para empezar a responder las peticiones desde cualquier navegador.
 
-Hablaremos más de todos estos subsistemas en las siguientes páginas. Mientras tanto, ¡vamos a añadir algo de lógica a nuestra aplicación creando un paquete con un nuevo servicio web!
+Hablaremos más de todos estos subsistemas en próximas páginas. Mientras tanto, ¡vamos a añadir algo de lógica a nuestra aplicación creando un paquete con un nuevo servicio web!

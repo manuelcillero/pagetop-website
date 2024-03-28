@@ -46,10 +46,11 @@ Los paquetes en PageTop son *crates* de biblioteca, usualmente publicados en [cr
 
 # Seguridad
 
-Los paquetes ajenos a PageTop es código desarrollado por terceros y, dado que pueden hacer básicamente lo que quieran, pueden representar un serio riesgo para la seguridad de tu sistema. Por ejemplo, un paquete podría indicar que está analizando la entrada del usuario y realmente está descargando ransomware en tu computadora.
+Los paquetes ajenos a PageTop contienen código desarrollado por terceros y, dado que pueden hacer básicamente lo que quieran, pueden representar un serio riesgo para la seguridad de tu sistema. Por ejemplo, un paquete podría indicar que está analizando la entrada del usuario y realmente está descargando ransomware en tu computadora.
 
 Cualquier sospecha sobre paquetes malintencionados debe ser reportado confidencialmente al administrador de PageTop para ser analizado por la comunidad.
-
+<!--
 ## El registro de paquetes
 
 En este sitio web, se mantiene un registro de todos los paquetes conocidos. El ecosistema es joven. Los paquetes respaldados por la comunidad de PageTop tendrán una marca de verificación, aunque PageTop no se responsabiliza de ningún modo por paquetes malintencionados al ser código de terceros. Puedes añadir tus propios paquetes al registro siguiendo las instrucciones en nuestro sistema de reporte de issues, que te guiará a través del proceso.
+-->

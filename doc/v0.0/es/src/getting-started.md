@@ -31,7 +31,7 @@ En otro caso puedes pasar a la siguiente página para preparar un entorno de Rus
    git checkout latest
    ```
 
-4. Prueba los ejemplos de la [carpeta de ejemplos](https://github.com/manuelcillero/pagetop/tree/main/examples):
+4. Prueba los ejemplos de la [carpeta de ejemplos](https://github.com/manuelcillero/pagetop/tree/latest/examples):
 
    ```bash
    cargo run --example hello-world
